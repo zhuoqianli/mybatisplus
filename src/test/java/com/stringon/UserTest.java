@@ -40,6 +40,5 @@ public class UserTest {
                 .and(p -> p.eq("id","3" ).or().gt("salary", 100d));
         List<User> users = userDao.selectList(queryWrapper);
         HashMap<String, Object> hashMap = new HashMap<>();
-        users.forEach(p -> hashMap.put(p.getName(),p ));
     }
 }
