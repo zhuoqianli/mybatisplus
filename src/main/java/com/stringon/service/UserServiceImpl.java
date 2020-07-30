@@ -6,5 +6,6 @@ import com.stringon.entity.User;
 import org.springframework.stereotype.Service;
 
 @Service("userService")
+@Transactionl
 public class UserServiceImpl extends ServiceImpl<UserDao, User> implements UserService {
 }
