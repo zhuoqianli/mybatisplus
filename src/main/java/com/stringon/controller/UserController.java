@@ -20,7 +20,7 @@ import java.util.List;
 @Validated
 public class UserController {
 
-    @Autowir
+    @Resource
     private UserService userService;
     @Resource
     private ManagerDao managerDao;
